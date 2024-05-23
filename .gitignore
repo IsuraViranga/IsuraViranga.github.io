@@ -23,5 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# temperory ignore send contact,footer,Myworks,NavBarr,Services
-Contact/

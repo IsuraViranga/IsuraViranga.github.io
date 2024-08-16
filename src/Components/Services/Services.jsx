@@ -1,50 +1,54 @@
+import { useState } from 'react';
 import React from 'react';
 import './Services.css';
+import SlideView from './SlideView';
 
 const serviceList=[
     {
-        serviceNo:'01',
+        serviceNo:1,
         serviceName:'Mobile Development',
-        description:'Mobile development can be done in various ways....'
     },
     {
-        serviceNo:'02',
+        serviceNo:2,
         serviceName:'Web Development',
-        description:'Web development can be done in various ways....'
     },
     {
-        serviceNo:'03',
+        serviceNo:3,
         serviceName:'UI/UX Designing',
-        description:'UI/UX designing can be done in various ways....'
     },
 ]
 
-const listMap = serviceList.map((service,index)=>{
-   
-    return  <div className="services-format">
-        <h3>{service.serviceNo}</h3> 
-        <h2>{service.serviceName}</h2>
-        <p>{service.description}</p>
-        <div className="services-readmore">
-            <p>Read More</p>
-            <img src='' alt=''/> 
-        </div>
-    </div>
-})
+
 
 const Services = () => {
+    const[disNumber,setDisNumber]=useState(1);
 
-  return (
-   <div className="services" id='services'>
-     <div className="services-title">
-        <h1>My Services</h1>
-        <div></div>
-     </div>
-     <div className="services-container">
-        {listMap}
-     </div>
-   </div>
-  )
+    const handleServiceClick=(servicenum)=>{
+        setDisNumber(servicenum);
+    }
+
+    const listMap = serviceList.map((service,index)=>{
+        return  <div 
+            className="services-format"
+            key={index}
+            onClick={() => handleServiceClick(service.serviceNo)}
+        >
+            <h3>{service.serviceName}</h3>
+        </div>
+    })
+
+    return (
+    <div className="services" id='services'>
+        <div className="services-title">
+            <h1>My Services</h1>
+            <div></div>
+        </div>
+        <div className="services-container">
+            {listMap}
+        </div>
+        <SlideView number={disNumber}/>
+    </div>
+    )
 }
 
 export default Services

@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 80px;
     margin: 80px 170px;
-}
+} 
 .about-left img{
     height: 450px;
 }
@@ -46,9 +46,13 @@
 }
 .about-skills{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 50px;
 }
+
+
+
+
 .about-skill{
     display: flex;
     gap: 50px;
@@ -68,6 +72,10 @@
     border-radius: 50px;
     background: linear-gradient(to left, #DF8908 , #B415FF );
 }
+
+
+
+
 .about-achievements{
     display: flex;
     width: 100%;
@@ -93,7 +101,7 @@
     font-size: 22px;
     font-weight: 500;
 }
-.about-skill:hover{
+.dropdown:hover{
     transform: scale(1.05);
     transition: 0.3s;
 }
@@ -101,6 +109,46 @@
     transform: scale(1.12);
     transition: 0.5s;
 }
+
+.dropbtn {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to left, #dda045 , #b459df );
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #000000; color: #ffffff;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.newDiv{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
 @media(max-width:768px){
     .about{
         gap: 80px;

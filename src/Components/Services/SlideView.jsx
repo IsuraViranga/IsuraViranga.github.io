@@ -3,7 +3,9 @@ import myprofile from '../../assets/myprofile.jpg';
 import coloFrame from '../../assets/frame.jpg';
 import todo from '../../assets/todour.jpg';
 import coke from '../../assets/coke.jpg';
+import coke5 from '../../assets/coke5.jpg';
 import cokefinall from '../../assets/cokefinall.jpg';
+import whats3 from '../../assets/whats3.jpg';
 import './SlideView.css';
 import { useState, useEffect } from 'react';
 
@@ -13,13 +15,13 @@ const mobile=[
         proTitle:"WhatsUp",
         descrip:"Developed a chat application which can be used for realtimecommunicate, using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:myprofile
+        imageUrl:whats3
     },
     {
         proTitle:"Coca-Cola Work permit App",
         descrip:"Developed a real-time communicating chat ap using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:coke
+        imageUrl:coke5
     },
     {
         proTitle:"MedInvent Patient Mobile App",

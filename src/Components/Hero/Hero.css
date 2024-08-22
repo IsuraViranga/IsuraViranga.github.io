@@ -44,7 +44,7 @@
 .hero-resume{
     padding: 25px 75px;
     border-radius: 50px;
-    border: 2px solid #FFF;
+    border: 2px solid #FFF; 
     cursor: pointer;
 }
 .hero-connect:hover{

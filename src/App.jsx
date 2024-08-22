@@ -6,14 +6,14 @@ import Services from './Components/Services/Services'
 import MyWorks from './Components/MyWorks/MyWorks'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
-
+import NewHero from './Components/NewHero/NewHero'
 
 
 const App = () => {
   return (
     <div>
       <Navbar/>
-      <Hero/>
+      <NewHero/>
       <About/>
       <Services/>
       <MyWorks/>

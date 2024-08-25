@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './NewHero.css'; // Import the CSS file
 import MainPic from '../../assets/mainProfilePic.png'; // Import your background-removed photo
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const NewHero = () => {
     const [displayedText, setDisplayedText] = useState('');
@@ -11,6 +13,12 @@ const NewHero = () => {
     const fullTextTwo ="Full Stack Developer based in Sri Lanka.";
     
     useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+        });
+
         let charIndex = 0;
         const typeText = () => {
             if (charIndex < fullText.length) {
@@ -36,12 +44,18 @@ const NewHero = () => {
 
     return (
         <div className="intro-container">
-            <div className="photo-container">
-                <div className="circle-animation">
+            <div className="photo-container" data-aos="fade-down">
+                {/* <div className="circle-animation">
                     <img src={MainPic} alt="Isura Perera" className="profile-photo" />
+                </div> */}
+                <div className="circle-animation">
+                    <div className="dotted-border"></div>
+                    <div className="profile-photo-container">
+                        <img src={MainPic} alt="Isura Perera" className="profile-photo" />
+                    </div>
                 </div>
             </div>
-            <div className="intro-text">
+            <div className="intro-text" data-aos="fade-left">
                 <div className="intro-text-two">
                     <h1>{displayedText}</h1>
                     <h2>{displayedTextTwo}</h2>

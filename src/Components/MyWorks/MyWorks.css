@@ -13,7 +13,7 @@
    padding: 0px  30px;
    font-size: 80px;
    font-weight: 600;
-}
+} 
 .myWork-title div{
     position: absolute;
     bottom: 0;
@@ -35,6 +35,8 @@
   height: 280px;
   transition: 0.3s;
   cursor: pointer;
+  object-fit:fill;
+  object-position:center;
 }
 .myWork-container img:hover{
     transform: scale(1.10);

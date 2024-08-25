@@ -120,7 +120,7 @@ const SlideView = ({ number }) => {
             setDisNumber(diNumber-1);
         }
     }
-
+ 
     return (
      <div className='slideBig'>
         <div className='insideOne'>

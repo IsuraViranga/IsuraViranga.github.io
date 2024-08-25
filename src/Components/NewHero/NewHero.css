@@ -20,28 +20,40 @@
     position: relative;
     width: 450px;
     height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dotted-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     border: 5px dashed #fff; /* Dotted circle */
-    animation: rotate 10s infinite linear;
+    animation: rotate 35s infinite linear;
+    z-index: 1;
 }
-  
-.profile-photo {
+.profile-photo-container {
     position: absolute;
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    object-fit:contain;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 2;
+}
+  
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
   
 @keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
   

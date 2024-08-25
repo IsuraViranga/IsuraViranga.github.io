@@ -1,40 +1,29 @@
 import React from 'react';
 import './MyWorks.css';
 import sampleImage from '../../assets/workSample.jpg';
+import Snake from '../../assets/snakeOne.png';
+import Dream from '../../assets/dream.png';
+import Article from '../../assets/article.png';
 import arrow from '../../assets/arrow2.svg';
 
-
+ 
 const workList=[
     {
         workNo:'01',
         workName:'Mobile Design',
-        w_img:sampleImage
+        w_img:Snake
     },
     {
         workNo:'02',
         workName:'Web Design',
-        w_img:sampleImage
+        w_img:Dream
     },
     {
         workNo:'03',
         workName:'Arduino Project',
-        w_img:sampleImage
+        w_img:Article
     },
-    {
-        workNo:'04',
-        workName:'UI Design',
-        w_img:sampleImage
-    },
-    {
-        workNo:'05',
-        workName:'Web Design',
-        w_img:sampleImage
-    },
-    {
-        workNo:'06',
-        workName:'Mobile Design',
-        w_img:sampleImage
-    }, 
+   
 ]
 
 const listMap = workList.map((work,index)=>{

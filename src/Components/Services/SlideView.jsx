@@ -8,6 +8,8 @@ import cokefinall from '../../assets/cokefinall.jpg';
 import whats3 from '../../assets/whats3.jpg';
 import './SlideView.css';
 import { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const mobile=[
@@ -98,6 +100,12 @@ const SlideView = ({ number }) => {
     const[diNumber,setDisNumber]=useState(0);
     const[displaySet, setSlides]=useState(mobile);
     useEffect(() => {
+
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+        });
         //Runs only on the first render
         setDisNumber(0);
         if(number == 1){
@@ -123,7 +131,7 @@ const SlideView = ({ number }) => {
  
     return (
      <div className='slideBig'>
-        <div className='insideOne'>
+        <div className='insideOne' data-aos="fade-right" >
             <div className='slideLeft'>
                 <h1>{diNumber+1}. {displaySet[diNumber].proTitle}</h1>
                 <h3>Description</h3>
@@ -135,7 +143,7 @@ const SlideView = ({ number }) => {
                 <img src={displaySet[diNumber].imageUrl} alt="pic" />
             </div>
         </div>
-        <div className='insideTwo'>
+        <div className='insideTwo' data-aos="fade-left">
             <div className='button1' onClick={prevhandler}>Prev</div>
             <div  className='button1'  onClick={nexthandler}>Next</div>
         </div>

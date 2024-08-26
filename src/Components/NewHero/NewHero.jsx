@@ -4,7 +4,7 @@ import MainPic from '../../assets/mainProfilePic.png'; // Import your background
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+ 
 const NewHero = () => {
     const [displayedText, setDisplayedText] = useState('');
     const [displayedTextTwo, setDisplayedTextTwo] = useState('');

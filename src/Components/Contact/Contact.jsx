@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import mobile from '../../assets/mobile2.svg';
 import location from '../../assets/location.svg';
 import mail from '../../assets/mail1.svg';
 import './Contact.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+
+    useEffect(() => {
+      AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+      });
+    }, []);
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -32,12 +41,12 @@ const Contact = () => {
 
   return (
     <div className="contact" id='contact'>
-        <div className="contact-title">
+        <div className="contact-title" data-aos="fade-up">
             <h1>Get in touch</h1>
             <div></div>
         </div>
         <div className="contact-section">
-            <div className="contact-left">
+            <div className="contact-left" data-aos="fade-right">
                 <h1>Let's talk</h1>
                 <p>I am currently available to take on new projects.so feel free to send me a message about anything you want me to work on.You can contact anytime.</p>
                 <div className="contact-details">
@@ -50,9 +59,9 @@ const Contact = () => {
                     <div className="contact-detail">
                          <img src={location} alt='mail address'/><p>Colombo SriLanka</p>
                     </div>
-                </div>
+                </div> 
             </div>
-            <form onSubmit={onSubmit} className="contact-right">
+            <form onSubmit={onSubmit} className="contact-right" data-aos="fade-left">
                 <label htmlFor=''>Your Name</label>
                 <input type='text' placeholder='Enter your name' name='name'/>
                 <label htmlFor=''>Your Email</label>

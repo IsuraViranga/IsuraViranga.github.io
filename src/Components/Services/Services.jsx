@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Services.css';
 import SlideView from './SlideView';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const serviceList = [
   {
@@ -25,7 +26,7 @@ const Services = () => {
   const handleServiceClick = (servicenum) => {
     setDisNumber(servicenum);
   };
-
+ 
   const handleMouseEnter = (service) => {
     setHoveredService(service.serviceName);
   };
@@ -33,6 +34,14 @@ const Services = () => {
   const handleMouseLeave = () => {
     setHoveredService(null);
   };
+
+  useEffect(() => {
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+    });
+  }, []);
 
   const listMap = serviceList.map((service, index) => {
     return (
@@ -55,12 +64,12 @@ const Services = () => {
 
   return (
     <div className="services" id="services">
-      <div className="services-title">
+      <div className="services-title"  data-aos="fade-up">
         <h1>My Projects</h1>
         <div></div>
       </div>
-      <div className="title-categories">Categories</div>
-      <div className="services-container">{listMap}</div>
+      <div className="title-categories" data-aos="fade-right">Categories</div>
+      <div className="services-container" data-aos="fade-right">{listMap}</div>
       <SlideView number={disNumber} />
     </div>
   );

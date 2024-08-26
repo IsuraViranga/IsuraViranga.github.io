@@ -5,6 +5,8 @@ import Dream from '../../assets/dream.png';
 import Article from '../../assets/article.png';
 import arrow from '../../assets/arrow2.svg';
 import closeIcon from '../../assets/close.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
  
 const workList = [
   {
@@ -48,6 +50,13 @@ const MyWorks = () => {
   };
 
   useEffect(() => {
+
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
     if (indetail) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
@@ -67,16 +76,16 @@ const MyWorks = () => {
       onClick={() => ShowDetails(work.workNo)}
     />
   ));
-
+ 
   return (
     <>
       <div className="myWork" id="work">
-        <div className="myWork-title">
+        <div className="myWork-title" data-aos="fade-up">
           <h1>My Latest Works</h1>
           <div></div>
         </div>
-        <div className="myWork-container">{listMap}</div>
-        <div className="mywork-showmore">
+        <div className="myWork-container" data-aos="fade-right">{listMap}</div>
+        <div className="mywork-showmore"  data-aos="fade-up">
           <p>Show More</p>
           <img src={arrow} alt="arrow" />
         </div>

@@ -69,7 +69,7 @@ const NewHero = () => {
                 </div>
             </div>
         </div> 
-    );
+    ); 
 };
 
 export default NewHero;

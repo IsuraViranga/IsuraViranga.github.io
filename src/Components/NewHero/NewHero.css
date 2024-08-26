@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 .dotted-border {
     position: absolute;
     width: 100%;
@@ -87,6 +87,7 @@
 .hero-action{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 25px;
     font-size: 24px;
     font-weight: 500;
@@ -155,6 +156,7 @@
         font-size: 18px;
         font-weight: 500;
         margin-bottom: 50px;
+        text-align: center;
     }
     .hero-connect{
         padding: 20px 30px;
@@ -165,4 +167,55 @@
         border-radius: 40px;
     }
   }
+
+ /* Responsive Design */
+ @media (max-width: 430px) {
+    .intro-container {
+      flex-direction: column;
+      text-align: center;
+    }
   
+    .photo-container, .intro-text {
+      flex: none;
+      width: 100%;
+    }
+  
+    .circle-animation {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .intro-text {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .intro-text h1 {
+      font-size: 2rem;
+    }
+  
+    .intro-text h2 {
+      font-size: 1.25rem;
+    }
+  
+    .intro-text p {
+      font-size: 0.9rem;
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        font-size:12px;
+        text-align: center;
+    }
+    .hero-connect{
+        padding: 20px 15px;
+        border-radius: 40px;
+    }
+    .hero-resume{
+        padding: 20px 18px;
+        border-radius: 40px;
+    }
+}
+   

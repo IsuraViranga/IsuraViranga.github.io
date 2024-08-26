@@ -5,7 +5,7 @@ import menue from '../../assets/menu.svg';
 import close from '../../assets/close.svg';
 
 
-
+ 
 const Navbar = () => {
 
   const[menu,setMenu]=useState("Home");

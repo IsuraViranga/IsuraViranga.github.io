@@ -46,7 +46,7 @@ const Services = () => {
         <h3>{service.serviceName}</h3>
         {hoveredService === service.serviceName && (
           <div className="popup">
-            Click and view projects below relevant to {service.serviceName}
+            Click & view {service.serviceName} projects below
           </div>
         )}
       </div>

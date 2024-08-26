@@ -5,7 +5,7 @@ import Dream from '../../assets/dream.png';
 import Article from '../../assets/article.png';
 import arrow from '../../assets/arrow2.svg';
 import closeIcon from '../../assets/close.svg';
-
+ 
 const workList = [
   {
     workNo: 0,

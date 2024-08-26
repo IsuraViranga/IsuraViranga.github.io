@@ -99,6 +99,7 @@
       bottom: -35px;
       font-size: 12px;
       padding: 8px 10px;
+      width: 90%;
     }
     .services-container {
       display: flex;

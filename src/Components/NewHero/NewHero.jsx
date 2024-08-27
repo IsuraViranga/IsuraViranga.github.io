@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import './NewHero.css'; // Import the CSS file
-import MainPic from '../../assets/mainProfilePic.png'; // Import your background-removed photo
+import './NewHero.css'; 
+import MainPic from '../../assets/mainProfilePic.png'; 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
- 
+
 const NewHero = () => {
     const [displayedText, setDisplayedText] = useState('');
     const [displayedTextTwo, setDisplayedTextTwo] = useState('');
+    const [showPopup, setShowPopup] = useState(false);
     const fullText = "Hello, I'm Isura Perera...";
     const typingSpeed = 100; 
     const fullTextTwo ="Undergraduate Student At University Of Moratuwa Srilanka . . .";
-   // Full Stack Developer based in Sri Lanka.
+    
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -42,12 +43,22 @@ const NewHero = () => {
         typeText();
     }, []);
 
+    const togglePopup = () => setShowPopup(!showPopup);
+
+    const handleNavigateClick = () => {
+        togglePopup(); // Close the popup
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const handleClosePopup = (e) => {
+        if (e.target.className === 'popup-overlay') {
+            togglePopup(); // Close the popup when clicking outside
+        }
+    };
+
     return (
         <div className="intro-container">
             <div className="photo-container" data-aos="fade-down">
-                {/* <div className="circle-animation">
-                    <img src={MainPic} alt="Isura Perera" className="profile-photo" />
-                </div> */}
                 <div className="circle-animation">
                     <div className="dotted-border"></div>
                     <div className="profile-photo-container">
@@ -65,9 +76,19 @@ const NewHero = () => {
                 </div>
                 <div className="hero-action">
                     <div className="hero-connect"><AnchorLink offset={50} href='#contact' className='anchor-link'>Connect With Me</AnchorLink></div>
-                    <div className="hero-resume">My resume</div>
+                    <div className="hero-resume" onClick={togglePopup}>My resume</div>
                 </div>
             </div>
+
+            {showPopup && (
+                <div className="popup-overlay" onClick={handleClosePopup}>
+                    <div className="popup-content">
+                        <button className="popup-close" onClick={togglePopup}>X</button>
+                        <p>Send me your email through the form below. The resume will be sent to your mail.</p>
+                        <button className="popup-navigate" onClick={handleNavigateClick}>Navigate</button>
+                    </div>
+                </div>
+            )}
         </div> 
     ); 
 };

@@ -24,78 +24,78 @@ const mobile=[
     {
         proTitle:"WhatsUp",
         descrip:"Developed a chat application which can be used for realtimecommunicate, using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        technologies:"Flutter, Node.js, Socket.io, sqLite",
         imageUrl:whats3
     },
     {
-        proTitle:"Coca-Cola Work permit App",
-        descrip:"Developed a real-time communicating chat ap using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:coke5
+        proTitle:"MedInvent Patient Mobile App",
+        descrip:"MedInvent Connect improves healthcare in Sri Lanka by connecting doctors, patients, and pharmacists. Users can manage profiles, prescriptions, and appointments, with notifications for cancellations and doctor arrivals, plus online payments.",
+        technologies:"Flutter,ReactJS, Node.js,PostgreSQL with Sequelize,Firebase for push notifications",
+        imageUrl:medMobileCode
     },
     {
-        proTitle:"MedInvent Patient Mobile App",
-        descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:medMobileCode
+        proTitle:"Coca-Cola Work permit App",
+        descrip:"Developing a work permit management application for Coca-Cola Beverages Sri Lanka Limited to digitize daily work permit forms through a mobile app. This application will also generate summary reports, allowing the company to analyze the types and frequency of work permits used each month.",
+        technologies:"React Native,Node.js,MySQL",
+        imageUrl:coke5
     }
 ];
 
 const web=[
     {
         proTitle:"MedInvent",
-        descrip:"Developed a chat application which can be used for realtime communicate, using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        descrip:"Using the MedInvent web application, doctors and clinics can schedule sessions, view session details via calendars, and send notifications for session cancellations and doctor arrivals to relevant patients.",
+        technologies:"React.js, Node.js,PostgreSQL with Sequelize",
         imageUrl:medTable
     },
     {
-        proTitle:"DreamBot",
-        descrip:"Developed a real-time communicating chat ap using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:sailing
-    },
-    {
         proTitle:"Protfolio",
-        descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        descrip:"Developed a personal portfolio website featuring my bio,project details for mobile and web apps, skills, services in web and mobile development, and contact information to showcases my professional journey",
+        technologies:"React.js , CSS",
         imageUrl:myPolio
     },
     {
-        proTitle:"Coca-Cola Work permit App",
-        descrip:"Developed a real-time communicating chat ap using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        proTitle:"SailingPen Educational Site",
+        descrip:"This project is a clone website of the SailingPen educational institute. It replicates the original site's design and functionality, offering a similar user experience for educational purposes. ",
+        technologies:"HTML, CSS, and JavaScript",
+        imageUrl:sailing
+    },
+    {
+        proTitle:"AIMEE School Site",
+        descrip:"Developed a dynamic website for AIMEE International School, enhancing online presence and communication. The site features an intuitive design with detailed program information and staff profiles.",
+        technologies:"HTML, CSS, and JavaScript",
         imageUrl:aimee
     },
     {
-        proTitle:"MedInvent Patient Mobile App",
-        descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        proTitle:"JetWing Hotel Web Site",
+        descrip:"Developed a website for Jetwing Hotel to gain hands-on experience in web development. The site includes room details, hotel information, and contact options.",
+        technologies:"HTML, CSS, and JavaScript",
         imageUrl:jetwing
     }
 ];
 const UI=[
     {
-        proTitle:"UUUUI",
-        descrip:"Developed a chat application which can be used for realtime communicate, using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:todo 
-    },
-    {
-        proTitle:"Coca-Cola Work permit App",
-        descrip:"Developed a real-time communicating chat ap using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:cokefinall
-    },
-    {
         proTitle:"MedInvent Patient Mobile App",
-        descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        descrip:"MedInvent Patient Mobile App UI design",
+        technologies:"using Figma",
         imageUrl:medMobile
     },
     {
+        proTitle:"Coca-Cola Work permit App",
+        descrip:"Coca-Cola Work permit App UI design",
+        technologies:"using Figma",
+        imageUrl:cokefinall
+    },
+    {
+        proTitle:"ToDour todo app",
+        descrip:"ToDour todo app UI design",
+        technologies:"using Figma",
+        imageUrl:todo 
+    },
+    {
         proTitle:"MedInvent Patient Mobile App",
-        descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
-        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        descrip:"MedInvent Patient Mobile App UI design",
+        technologies:"using Figma",
         imageUrl:medWebUi
     }
 ];

@@ -61,7 +61,6 @@ const About = () => {
                       <div class="dropdown-content">
                         <a>Sequalize</a>
                         <a>My SQL</a>
-                        <a>Mongo db</a>
                       </div>
                     </div>
                 </div>

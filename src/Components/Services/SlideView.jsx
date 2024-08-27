@@ -6,6 +6,14 @@ import coke from '../../assets/coke.jpg';
 import coke5 from '../../assets/coke5.jpg';
 import cokefinall from '../../assets/cokefinall.jpg';
 import whats3 from '../../assets/whats3.jpg';
+import medMobile from '../../assets/medMobile4.jpg'
+import medMobileCode from '../../assets/medMobileCodeF.jpg'
+import medTable from '../../assets/medTable.jpg'
+import medWebUi from '../../assets/medWebUi.jpg'
+import sailing from '../../assets/sailing.png'
+import myPolio from '../../assets/myPolio.png'
+import aimee from '../../assets/aimee.png'
+import jetwing from '../../assets/jetwing.png'
 import './SlideView.css';
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
@@ -29,7 +37,7 @@ const mobile=[
         proTitle:"MedInvent Patient Mobile App",
         descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:myprofile
+        imageUrl:medMobileCode
     }
 ];
 
@@ -38,31 +46,31 @@ const web=[
         proTitle:"MedInvent",
         descrip:"Developed a chat application which can be used for realtime communicate, using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:coloFrame
+        imageUrl:medTable
     },
     {
         proTitle:"DreamBot",
         descrip:"Developed a real-time communicating chat ap using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:coloFrame
+        imageUrl:sailing
     },
     {
         proTitle:"Protfolio",
         descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:myprofile
+        imageUrl:myPolio
     },
     {
         proTitle:"Coca-Cola Work permit App",
         descrip:"Developed a real-time communicating chat ap using WebSockets and explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:myprofile
+        imageUrl:aimee
     },
     {
         proTitle:"MedInvent Patient Mobile App",
         descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:myprofile
+        imageUrl:jetwing
     }
 ];
 const UI=[
@@ -82,7 +90,13 @@ const UI=[
         proTitle:"MedInvent Patient Mobile App",
         descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
         technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
-        imageUrl:myprofile
+        imageUrl:medMobile
+    },
+    {
+        proTitle:"MedInvent Patient Mobile App",
+        descrip:"Developed a real-time communicating chat applicata nd explore how WhatsApp functions work. The project demonstrates the to implement and manage real-time interactions within an application.",
+        technologies:"Flutter, Node.js, Socket.io, sqLite, MongoDB",
+        imageUrl:medWebUi
     }
 ];
 

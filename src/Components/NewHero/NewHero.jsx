@@ -10,8 +10,8 @@ const NewHero = () => {
     const [displayedTextTwo, setDisplayedTextTwo] = useState('');
     const fullText = "Hello, I'm Isura Perera...";
     const typingSpeed = 100; 
-    const fullTextTwo ="Full Stack Developer based in Sri Lanka.";
-    
+    const fullTextTwo ="Undergraduate Student At University Of Moratuwa Srilanka . . .";
+   // Full Stack Developer based in Sri Lanka.
     useEffect(() => {
         AOS.init({
             duration: 1000,

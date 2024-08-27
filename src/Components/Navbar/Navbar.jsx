@@ -28,7 +28,7 @@ const Navbar = () => {
     Home:'home',
     About_Me:'about',
     Services:'services',
-    Portfolio:'work',
+    Portfolio:'Laatest Works',
     Contact:'contact'
   }
 

@@ -39,7 +39,6 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <label>ISURA</label>
       <img src={menue} onClick={openMenu} alt='' className='nav-mob-open'/>
       <ul ref={menuRef} className="nav-menu">
         <img src={close} onClick={closeMenu} alt='close' className='nav-mob-close'/>

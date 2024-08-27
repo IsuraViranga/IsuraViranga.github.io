@@ -4,6 +4,9 @@
     justify-content: space-between;
     margin: 20px 170px;
 }
+.navbar label{
+    font-weight: bold;
+}
 .nav-menu{
     display: flex;
     align-items: center;

@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   const navNames = {
-    Home:'home',
+    Home:'home change',
     About_Me:'about',
     Services:'services',
     Portfolio:'Laatest Works',

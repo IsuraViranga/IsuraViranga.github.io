@@ -80,7 +80,7 @@
 }
   
 .intro-text-two p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.5;
 }
 
@@ -94,13 +94,13 @@
     margin-bottom: 50px;
 }
 .hero-connect{
-    padding: 25px 45px;
+    padding: 20px 40px;
     border-radius: 50px;
     background: linear-gradient(to left, #DF8908 , #B415FF );
     cursor: pointer;
 }
 .hero-resume{
-    padding: 25px 75px;
+    padding: 20px 70px;
     border-radius: 50px;
     border: 2px solid #FFF; 
     cursor: pointer;

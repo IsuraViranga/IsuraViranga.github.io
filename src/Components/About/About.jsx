@@ -55,7 +55,7 @@ const About = () => {
                         <a>Css</a>
                         <a>React JS</a>
                       </div>
-                    </div>
+                    </div> 
                     <div class="dropdown">
                       <button class="dropbtn">Databases</button>
                       <div class="dropdown-content">

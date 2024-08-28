@@ -41,7 +41,7 @@ const MyWorks = () => {
 
   const CloseDetails = () => {
     setIndetail(false);
-  };
+  }; 
 
   const handleClickOutside = (event) => {
     if (popupRef.current && !popupRef.current.contains(event.target)) {

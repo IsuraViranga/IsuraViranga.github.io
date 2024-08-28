@@ -9,7 +9,7 @@ const NewHero = () => {
     const [displayedText, setDisplayedText] = useState('');
     const [displayedTextTwo, setDisplayedTextTwo] = useState('');
     const [showPopup, setShowPopup] = useState(false);
-    const fullText = "Hello, I'm Isura Perera...";
+    const fullText = "Hello, I'm Isura Viranga...";
     const typingSpeed = 100; 
     const fullTextTwo ="Undergraduate Student At University Of Moratuwa Srilanka ...";
     

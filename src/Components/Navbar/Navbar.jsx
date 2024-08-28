@@ -22,17 +22,18 @@ const Navbar = () => {
 
   const handleClick=(value)=>{
      setMenu(value);
+     menuRef.current.style.right="-350px";
   }
 
   const navNames = {
-    Home:'home change',
+    Home:'home',
     About_Me:'about',
-    Services:'services',
-    Portfolio:'Laatest Works',
+    Projects:'projects',
+    Upcoming:'upcoming',
     Contact:'contact'
   }
 
-  const columnNames = ['Home', 'About_Me', 'Services', 'Portfolio', 'Contact'];
+  const columnNames = ['Home', 'About_Me', 'Projects', 'Upcoming', 'Contact'];
   const storeMap = columnNames.map((x,index) => {
     return <li key={index}><AnchorLink className='anchor-link' offset={50} href={`#${navNames[x]}`}><p onClick={()=>handleClick(x)}>{x}</p></AnchorLink>{menu===x ? <hr id='underline'/> :<></>}</li>;
   });

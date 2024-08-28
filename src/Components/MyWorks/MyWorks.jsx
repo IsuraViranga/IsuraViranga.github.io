@@ -79,7 +79,7 @@ const MyWorks = () => {
  
   return (
     <>
-      <div className="myWork" id="work">
+      <div className="myWork" id="upcoming">
         <div className="myWork-title" data-aos="fade-up">
           <h1>My Latest Works</h1>
           <div></div>

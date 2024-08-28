@@ -63,7 +63,7 @@ const Services = () => {
   });
 
   return (
-    <div className="services" id="services">
+    <div className="services" id="projects">
       <div className="services-title"  data-aos="fade-up">
         <h1>My Projects</h1>
         <div></div>

@@ -11,7 +11,7 @@ const NewHero = () => {
     const [showPopup, setShowPopup] = useState(false);
     const fullText = "Hello, I'm Isura Perera...";
     const typingSpeed = 100; 
-    const fullTextTwo ="Undergraduate Student At University Of Moratuwa Srilanka . . .";
+    const fullTextTwo ="Undergraduate Student At University Of Moratuwa Srilanka ...";
     
     useEffect(() => {
         AOS.init({
@@ -57,7 +57,7 @@ const NewHero = () => {
     };
 
     return (
-        <div className="intro-container">
+        <div className="intro-container" id='home'>
             <div className="photo-container" data-aos="fade-down">
                 <div className="circle-animation">
                     <div className="dotted-border"></div>

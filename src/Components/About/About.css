@@ -144,7 +144,7 @@
     flex-direction: column;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .about {
         gap: 50px;
         margin: 50px 20px;  /* Adjusted margin for better responsiveness */

@@ -69,7 +69,7 @@ const About = () => {
       </div>
       <div className="about-achievements" data-aos="fade-left">
             <div className="about-acievement">
-                <h1>04+</h1>
+                <h1>05+</h1>
                 <p>COMPLETED PROJECTS</p>
             </div>
             <hr/>

@@ -136,7 +136,7 @@
   border-radius: 10px;
   text-align: center;
   max-width: 500px;
-  width: 90%;
+  width: 40%;
   position: relative;
 }
 .popup-content p{
@@ -171,9 +171,9 @@
 
   
   /* Responsive Design */
-  @media (max-width: 1360px) {
+  @media (max-width: 1200px) {
     .popup-content {
-      width: 80%;
+      width: 50%;
     }
     .intro-container {
       flex-direction: column;
@@ -221,12 +221,18 @@
         padding: 20px 30px;
         border-radius: 40px;
     }
+    .dotted-border {
+      border: 4px dashed #fff; /* Dotted circle */
+    }
   }
 
  /* Responsive Design */
  @media (max-width: 430px) {
+    .dotted-border {
+      border: 4px dashed #fff; /* Dotted circle */
+    }
     .popup-content {
-      width: 90%;
+      width: 50%;
     }
     .intro-container {
       flex-direction: column;

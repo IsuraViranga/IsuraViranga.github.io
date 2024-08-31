@@ -92,12 +92,6 @@ const UI=[
         technologies:"using Figma",
         imageUrl:todo 
     },
-    {
-        proTitle:"MedInvent Patient Mobile App",
-        descrip:"MedInvent Patient Mobile App UI design",
-        technologies:"using Figma",
-        imageUrl:medWebUi
-    }
 ];
 
 const game =[
